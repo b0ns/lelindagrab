@@ -2,5 +2,8 @@ bons - 02/01/2012
 
 stupid script for simple pic grabbing but amazing video for les lindarets :P
 
+usage:
+- lelindagrabber.py 2011-12-01 2011-12-02
+
 todo:
-- integrate video generation via imagemagick convert command
+- nothing

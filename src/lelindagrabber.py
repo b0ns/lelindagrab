@@ -10,6 +10,7 @@ Created on Jan 2, 2012
 import sys
 import urllib
 import time
+import os
 from datetime import datetime,timedelta
 
 
@@ -44,6 +45,10 @@ if __name__ == '__main__':
     for date in daterange(start_date, end_date):
         for hour in h_list:
             retrieveImages( date, hour, path )
+    print "Finished retrieving pics now generating video movie.mp4... \n"
+    print "Be patients... it's gonna take some minutes \n"
+    os.system('convert -delay 1x2 -limit memory 1024mb -limit map 64mb ./pics/201* movie.mp4')
+    print "Jpeg to Mp4 conversion completed...enjoy :P \n"
      
      
 
